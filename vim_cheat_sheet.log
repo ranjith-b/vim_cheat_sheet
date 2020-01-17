@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.7.28)  17 JAN 2020 19:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.7.28)  17 JAN 2020 20:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -524,30 +524,30 @@ File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
 (./vim_cheat_sheet.aux)
 \openout1 = `vim_cheat_sheet.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 51.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 52.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 51.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -560,16 +560,16 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * bindingoffset: 14.45377pt
-* modes: 
-* h-part:(L,W,R)=(72.26999pt, 438.51413pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=438.51413pt
-* \textheight=700.50687pt
-* \oddsidemargin=14.45377pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
+* modes: landscape 
+* h-part:(L,W,R)=(14.45377pt, 801.68555pt, 14.45377pt)
+* v-part:(T,H,B)=(14.45377pt, 568.60034pt, 14.45377pt)
+* \paperwidth=845.04684pt
+* \paperheight=597.50787pt
+* \textwidth=801.68555pt
+* \textheight=568.60034pt
+* \oddsidemargin=-43.36246pt
+* \evensidemargin=-57.81622pt
+* \topmargin=-94.81622pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -587,7 +587,7 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 52.
+LaTeX Info: Redefining \microtypecontext on input line 51.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
@@ -616,7 +616,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 \everyMPtoPDFconversion=\toks26
 )
 \AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 52.
+Package hyperref Info: Link coloring OFF on input line 51.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -625,42 +625,42 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count123
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 59.
+LaTeX Info: Redefining \ref on input line 51.
+LaTeX Info: Redefining \pageref on input line 51.
+LaTeX Info: Redefining \nameref on input line 51.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 58.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 406.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 405.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 406.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 459.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 405.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 458.
  [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 459.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 458.
 
 (./vim_cheat_sheet.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 459.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 459.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 458.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 458.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 12497 strings out of 492616
- 180547 string characters out of 6129481
- 307869 words of memory out of 5000000
+ 12483 strings out of 492616
+ 180399 string characters out of 6129481
+ 306930 words of memory out of 5000000
  16253 multiletter control sequences out of 15000+600000
- 24077 words of font info for 35 fonts, out of 8000000 for 9000
+ 23496 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,5n,38p,814b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
@@ -669,7 +669,7 @@ texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist
 /fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/typ
 e1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/l
 m/lmtk10.pfb>
-Output written on vim_cheat_sheet.pdf (2 pages, 124315 bytes).
+Output written on vim_cheat_sheet.pdf (2 pages, 123119 bytes).
 PDF statistics:
  117 PDF objects out of 1000 (max. 8388607)
  107 compressed objects within 2 object streams
