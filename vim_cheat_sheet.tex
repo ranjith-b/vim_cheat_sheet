@@ -1,0 +1,459 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[twocolumn]{article}
+\usepackage{lmodern}
+\usepackage[a4paper,bindingoffset=0.2in,%
+            left=1in,right=1in,top=1in,bottom=1in,%
+            footskip=.25in]{geometry}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\author{}
+\date{}
+
+\begin{document}
+
+\hypertarget{vim-cheat-sheet}{%
+\section{Vim Cheat Sheet}\label{vim-cheat-sheet}}
+
+\begin{itemize}
+\item
+  \textbf{Note:} Extracted from the
+  \href{https://github.com/rtorr/vim-cheat-sheet}{rtorr} repository.
+\item
+  Thanks to all the contributors of the
+  \href{https://github.com/rtorr/vim-cheat-sheet}{rtorr} repository and
+  to the open source community.
+\end{itemize}
+
+\hypertarget{global}{%
+\subsection{Global}\label{global}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{:help} keyword - open help for keyword
+\item
+  \textbf{:saveas} file - save file as
+\item
+  \textbf{:close}- close current pane
+\item
+  \textbf{K} - open man page for word under the cursor
+\end{itemize}
+
+\hypertarget{cursor-movement}{%
+\subsection{Cursor movement}\label{cursor-movement}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{h} - move cursor left
+\item
+  \textbf{j} - move cursor down
+\item
+  \textbf{k} - move cursor up
+\item
+  \textbf{l} - move cursor right
+\item
+  \textbf{H} - move to top of screen
+\item
+  \textbf{M} - move to middle of screen
+\item
+  \textbf{L} - move to bottom of screen
+\item
+  \textbf{w} - jump forwards to the start of a word
+\item
+  \textbf{W} - jump forwards to the start of a word (words can contain
+  punctuation)
+\item
+  \textbf{e} - jump forwards to the end of a word
+\item
+  \textbf{E} - jump forwards to the end of a word (words can contain
+  punctuation)
+\item
+  \textbf{b} - jump backwards to the start of a word
+\item
+  \textbf{B} - jump backwards to the start of a word (words can contain
+  punctuation)
+\item
+  \textbf{\%} - move to matching character (default supported pairs:
+  `()', `\{\}', `{[}{]}' - use :h matchpairs in vim for more info)
+\item
+  \textbf{0} - jump to the start of the line
+\item
+  \textbf{\^{}} - jump to the first non-blank character of the line
+\item
+  \textbf{\$} - jump to the end of the line
+\item
+  \textbf{g\_} - jump to the last non-blank character of the line
+\item
+  \textbf{gg} - go to the first line of the document
+\item
+  \textbf{G} - go to the last line of the document
+\item
+  \textbf{5G} - go to line 5
+\item
+  \textbf{fx} - jump to next occurrence of character
+\item
+  \textbf{tx} - jump to before next occurrence of character
+\item
+  \textbf{Fx} - jump to previous occurence of character
+\item
+  \textbf{Tx} - jump to after previous occurence of character
+\item
+  \textbf{;} - repeat previous f, t, F or T movement
+\item
+  \textbf{,} - repeat previous f, t, F or T movement, backwards
+\item
+  \textbf{\}} - jump to next paragraph (or function/block, when editing
+  code)
+\item
+  \textbf{\{} - jump to previous paragraph (or function/block, when
+  editing code)
+\item
+  \textbf{zz} - center cursor on screen
+\item
+  \textbf{Ctrl + e} - move screen down one line (without moving cursor)
+\item
+  \textbf{Ctrl + y} - move screen up one line (without moving cursor)
+\item
+  \textbf{Ctrl + b} - move back one full screen
+\item
+  \textbf{Ctrl + f} - move forward one full screen
+\item
+  \textbf{Ctrl + d} - move forward 1/2 a screen
+\item
+  \textbf{Ctrl + u} - move back 1/2 a screen
+\end{itemize}
+
+\textbf{-Tip:} Prefix a cursor movement command with a number to repeat
+it. For example, 4j moves down 4 lines.
+
+\hypertarget{insert-mode---insertingappending-text}{%
+\subsection{Insert mode - inserting/appending
+text}\label{insert-mode---insertingappending-text}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{i} - insert before the cursor
+\item
+  \textbf{I} - insert at the beginning of the line
+\item
+  \textbf{a} - insert (append) after the cursor
+\item
+  \textbf{A} - insert (append) at the end of the line
+\item
+  \textbf{o} - append (open) a new line below the current line
+\item
+  \textbf{O} - append (open) a new line above the current line
+\item
+  \textbf{ea} - insert (append) at the end of the word
+\item
+  \textbf{Esc} - exit insert mode
+\end{itemize}
+
+\hypertarget{editing}{%
+\subsection{Editing}\label{editing}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{r} - replace a single character
+\item
+  \textbf{J} - join line below to the current one with one space in
+  between
+\item
+  \textbf{gJ} - join line below to the current one without space in
+  between
+\item
+  \textbf{gwip} - reflow paragraph
+\item
+  \textbf{cc} - change (replace) entire line
+\item
+  \textbf{C} - change (replace) to the end of the line
+\item
+  \textbf{c\$} - change (replace) to the end of the line
+\item
+  \textbf{ciw} - change (replace) entire word
+\item
+  \textbf{cw} - change (replace) to the end of the word
+\item
+  \textbf{s} - delete character and substitute text
+\item
+  \textbf{S} - delete line and substitute text (same as cc)
+\item
+  \textbf{xp} - transpose two letters (delete and paste)
+\item
+  \textbf{u} - undo
+\item
+  \textbf{Ctrl + r} - redo
+\item
+  \textbf{.} - repeat last command
+\end{itemize}
+
+\hypertarget{marking-text-visual-mode}{%
+\subsection{Marking text (visual mode)}\label{marking-text-visual-mode}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{v} - start visual mode, mark lines, then do a command (like
+  y-yank)
+\item
+  \textbf{V} - start linewise visual mode
+\item
+  \textbf{o} - move to other end of marked area
+\item
+  \textbf{Ctrl + v} - start visual block mode
+\item
+  \textbf{O} - move to other corner of block
+\item
+  \textbf{aw} - mark a word
+\item
+  \textbf{ab} - a block with ()
+\item
+  \textbf{aB} - a block with \{\}
+\item
+  \textbf{ib} - inner block with ()
+\item
+  \textbf{iB} - inner block with \{\}
+\item
+  \textbf{Esc} - exit visual mode
+\end{itemize}
+
+\hypertarget{visual-commands}{%
+\subsection{Visual commands}\label{visual-commands}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{\textgreater{}} - shift text right
+\item
+  \textbf{\textless{}} - shift text left
+\item
+  \textbf{y} - yank (copy) marked text
+\item
+  \textbf{d} - delete marked text
+\item
+  \textbf{\textasciitilde{}} - switch case
+\end{itemize}
+
+\hypertarget{registers}{%
+\subsection{Registers}\label{registers}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{:reg} - show registers content
+\item
+  \textbf{"xy} - yank into register
+\item
+  \textbf{"xp} - paste contents of register
+\end{itemize}
+
+\textbf{Tip:} Registers are being stored in \textasciitilde/.viminfo,
+and will be loaded again on next restart of vim. Tip Register 0 contains
+always the value of the last yank command. \#\# Marks
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{:marks} - list of marks
+\item
+  \textbf{ma} - set current position for mark A
+\item
+  \textbf{`a} - jump to position of mark A
+\item
+  \textbf{y`a} - yank text to position of mark A
+\end{itemize}
+
+\hypertarget{macros}{%
+\subsection{Macros}\label{macros}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{qa} - record macro a
+\item
+  \textbf{q} - stop recording macro
+\item
+  \textbf{@a} - run macro a
+\item
+  **@@** - rerun last run macro
+\end{itemize}
+
+\hypertarget{cut-and-paste}{%
+\subsection{Cut and paste}\label{cut-and-paste}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{yy} - yank (copy) a line
+\item
+  \textbf{2yy} - yank (copy) 2 lines
+\item
+  \textbf{yw} - yank (copy) the characters of the word from the cursor
+  position to the start of the next word
+\item
+  \textbf{y\$} - yank (copy) to end of line
+\item
+  \textbf{p} - put (paste) the clipboard after cursor
+\item
+  \textbf{P} - put (paste) before cursor
+\item
+  \textbf{dd} - delete (cut) a line
+\item
+  \textbf{2dd} - delete (cut) 2 lines
+\item
+  \textbf{dw} - delete (cut) the characters of the word from the cursor
+  position to the start of the next word
+\item
+  \textbf{D} - delete (cut) to the end of the line
+\item
+  \textbf{d\$} - delete (cut) to the end of the line
+\item
+  \textbf{x} - delete (cut) character
+\end{itemize}
+
+\hypertarget{exiting}{%
+\subsection{Exiting}\label{exiting}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{:w} - write (save) the file, but don't exit
+\item
+  \textbf{:w !sudo tee \%} - write out the current file using sudo
+\item
+  \textbf{:wq} or \textbf{:x} or \textbf{ZZ} - write (save) and quit
+\item
+  \textbf{:q} - quit (fails if there are unsaved changes)
+\item
+  \textbf{:q!} or \textbf{ZQ} - quit and throw away unsaved changes
+\item
+  \textbf{:wqa} - write (save) and quit on all tabs
+\end{itemize}
+
+\hypertarget{search-and-replace}{%
+\subsection{Search and replace}\label{search-and-replace}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{/pattern} - search for pattern
+\item
+  \textbf{?pattern} - search backward for pattern
+\item
+    \textbf{\textbackslash vpattern} - `very magic' pattern: non-alphanumeric characters are
+  interpreted as special regex symbols (no escaping needed)
+\item
+  \textbf{n} - repeat search in same direction
+\item
+  \textbf{N} - repeat search in opposite direction
+\item
+  \textbf{:\%s/old/new/g} - replace all old with new throughout file
+\item
+  \textbf{:\%s/old/new/gc} - replace all old with new throughout file
+  with confirmations
+\item
+  \textbf{:noh} - remove highlighting of search matches
+\end{itemize}
+
+\hypertarget{search-in-multiple-files}{%
+\subsection{Search in multiple files}\label{search-in-multiple-files}}
+
+\begin{itemize}
+\item
+  \textbf{:vimgrep /pattern/ \{\texttt{\{file\}}\}} - search for pattern
+  in multiple files
+
+  \textbf{e.g.~:} vimgrep /foo/ **/*
+\item
+  \textbf{:cn} - jump to the next match
+\item
+  \textbf{:cp} - jump to the previous match
+\item
+  \textbf{:copen} - open a window containing the list of matches
+\end{itemize}
+
+\hypertarget{working-with-multiple-files}{%
+\subsection{Working with multiple
+files}\label{working-with-multiple-files}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{:e file} - edit a file in a new buffer
+\item
+  \textbf{:bnext} or \textbf{:bn} - go to the next buffer
+\item
+  \textbf{:bprev} or \textbf{:bp} - go to the previous buffer
+\item
+  \textbf{:bd} - delete a buffer (close a file)
+\item
+  \textbf{:ls} - list all open buffers
+\item
+  \textbf{:sp file} - open a file in a new buffer and split window
+\item
+  \textbf{:vsp file} - open a file in a new buffer and vertically split
+  window
+\item
+  \textbf{Ctrl + ws} - split window
+\item
+  \textbf{Ctrl + ww} - switch windows
+\item
+  \textbf{Ctrl + wq} - quit a window
+\item
+  \textbf{Ctrl + wv} - split window vertically
+\item
+  \textbf{Ctrl + wh} - move cursor to the left window (vertical split)
+\item
+  \textbf{Ctrl + wl} - move cursor to the right window (vertical split)
+\item
+  \textbf{Ctrl + wj} - move cursor to the window below (horizontal
+  split)
+\item
+  \textbf{Ctrl + wk} - move cursor to the window above (horizontal
+  split)
+\end{itemize}
+
+\end{document}
